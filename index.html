@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B5D73">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lab Stock</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B5D73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 3h6M10 3v6.2L4.6 18a2 2 0 0 0 1.7 3h11.4a2 2 0 0 0 1.7-3L14 9.2V3'/%3E%3Cpath d='M7.5 14h9'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="config.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div id="bar" class="bar off" aria-hidden="true"></div>
+
+  <div id="login" class="login" hidden></div>
+
+  <div id="app" hidden>
+    <header class="top">
+      <a class="brand" href="#/map">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.2L4.6 18a2 2 0 0 0 1.7 3h11.4a2 2 0 0 0 1.7-3L14 9.2V3"/><path d="M7.5 14h9"/></svg></span>
+        <span id="brand-name">Lab Stock</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="เมนูหลัก"></nav>
+      <div class="top-r">
+        <button id="sync" class="icon-btn" type="button" title="ซิงก์"><span id="icon-sync"></span><span id="sync-txt"></span></button>
+        <span id="who" class="who"></span>
+        <button id="signout" class="icon-btn" type="button" title="ออกจากระบบ" aria-label="ออกจากระบบ"><span id="icon-out"></span></button>
+      </div>
+    </header>
+    <main id="main" class="main"></main>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:2rem">ต้องเปิด JavaScript เพื่อใช้งานระบบนี้</p></noscript>
+</body>
+</html>
